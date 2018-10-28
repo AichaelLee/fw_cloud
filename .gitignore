@@ -1,0 +1,16 @@
+.idea
+.project
+.settings
+.classpath
+*.iml
+.metadata
+client/target
+config/target
+eureka/target
+order/server/target
+product/client/target
+product/common/target
+product/server/target
+api-gateway/target
+.recommenders
+.factorypath
