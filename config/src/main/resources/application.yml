@@ -7,7 +7,7 @@ spring:
         git:
           uri: https://gitee.com/aichaellee/config-repo.git
           username: 793708025@qq.com
-          password: 15028773927a
+          password: XXXXXX
           basedir: /Users/aichaellee/project/springcloud_sell/config/basedir
 eureka:
   client:

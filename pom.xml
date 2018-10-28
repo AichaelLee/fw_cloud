@@ -8,7 +8,6 @@
 
   <modules>
     <module>api-gateway</module>
-    <module>client</module>
     <module>config</module>
     <module>eureka</module>
     <module>order</module>
