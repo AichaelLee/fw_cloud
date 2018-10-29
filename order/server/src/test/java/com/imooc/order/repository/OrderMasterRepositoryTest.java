@@ -1,7 +1,7 @@
 package com.imooc.order.repository;
 
 import com.imooc.order.OrderApplicationTests;
-import com.imooc.order.dataobject.OrderMaster;
+import com.imooc.order.entity.OrderMaster;
 import com.imooc.order.enums.OrderStatusEnum;
 import com.imooc.order.enums.PayStatusEnum;
 import org.junit.Assert;

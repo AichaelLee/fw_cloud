@@ -1,9 +1,9 @@
-package com.lzz.controller;
+package com.imooc.order.controller;
 
-import com.lzz.common.util.ResultBean;
-import com.lzz.form.CYD000001_OrderResource;
-import com.lzz.mapper.CYD000001OrderRepository;
-import com.lzz.model.CYD000001Order;
+import com.imooc.order.entity.CYD000001Order;
+import com.imooc.order.entity.ResultBean;
+import com.imooc.order.form.CYD000001_OrderResource;
+import com.imooc.order.mapper.CYD000001OrderRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -23,11 +23,17 @@ public class Order_Controller {
     @Autowired
     CYD000001OrderRepository orderService;
 
+    @GetMapping(value="test")
+    public String Test(){
+        return "success";
+    }
+
     @GetMapping(value = "")
     @ResponseStatus(HttpStatus.OK)
     public List<HashMap<Object, Object>> index() {
         return orderService.findCustomername();
     }
+
 
     @GetMapping(value = "customer/{id}")
     @ResponseStatus(HttpStatus.OK)

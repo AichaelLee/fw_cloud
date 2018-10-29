@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.lzz.mapper.CYD000001OrderRepository">
+<mapper namespace="com.imooc.order.mapper.CYD000001OrderRepository">
 
 <select id="findCustomername" resultType="java.util.HashMap">
 	select distinct customername, custnumber
@@ -15,7 +15,7 @@
 	where custnumber = #{custnumber}
 </select>
 
-<select id="findProducts" parameterType="com.lzz.model.CYD000001Order" resultType="java.util.HashMap">
+<select id="findProducts" parameterType="com.imooc.order.entity.CYD000001Order" resultType="java.util.HashMap">
 	select
 	    customername,
 	    custnumber,
@@ -50,7 +50,7 @@
 	and suppliername = #{suppliername}
 </select>
 
-<select id="customerordernoCount" parameterType="com.lzz.model.CYD000001Order" resultType="java.lang.Integer">
+<select id="customerordernoCount" parameterType="com.imooc.order.entity.CYD000001Order" resultType="java.lang.Integer">
 	select
 	    count(1)
 	from product
@@ -145,7 +145,7 @@ insert into product
       </if>
     </foreach>
 </insert>
-<update id="updataOrder" parameterType="com.lzz.model.CYD000001Order">
+<update id="updataOrder" parameterType="com.imooc.order.entity.CYD000001Order">
 	update product set
       <if test="customerorderno != null and customerorderno != ''">
       customerorderno = #{customerorderno}

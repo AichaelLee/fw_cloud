@@ -1,7 +1,7 @@
 package com.imooc.order.service.impl;
 
-import com.imooc.order.dataobject.OrderDetail;
-import com.imooc.order.dataobject.OrderMaster;
+import com.imooc.order.entity.OrderDetail;
+import com.imooc.order.entity.OrderMaster;
 import com.imooc.order.dto.OrderDTO;
 import com.imooc.order.enums.OrderStatusEnum;
 import com.imooc.order.enums.PayStatusEnum;

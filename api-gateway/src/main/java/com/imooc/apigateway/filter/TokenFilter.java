@@ -3,7 +3,6 @@ package com.imooc.apigateway.filter;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +14,7 @@ import static org.springframework.cloud.netflix.zuul.filters.support.FilterConst
  * Created by 廖师兄
  * 2018-02-15 15:34
  */
-@Component
+//@Component
 public class TokenFilter extends ZuulFilter {
     @Override
     public String filterType() {

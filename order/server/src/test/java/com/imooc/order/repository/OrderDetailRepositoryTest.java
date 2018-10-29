@@ -1,7 +1,7 @@
 package com.imooc.order.repository;
 
 import com.imooc.order.OrderApplicationTests;
-import com.imooc.order.dataobject.OrderDetail;
+import com.imooc.order.entity.OrderDetail;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

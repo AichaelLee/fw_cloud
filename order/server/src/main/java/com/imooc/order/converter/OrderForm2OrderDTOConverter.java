@@ -2,7 +2,7 @@ package com.imooc.order.converter;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.imooc.order.dataobject.OrderDetail;
+import com.imooc.order.entity.OrderDetail;
 import com.imooc.order.dto.OrderDTO;
 import com.imooc.order.enums.ResultEnum;
 import com.imooc.order.exception.OrderException;

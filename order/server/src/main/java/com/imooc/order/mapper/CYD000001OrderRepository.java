@@ -1,6 +1,7 @@
-package com.lzz.mapper;
+package com.imooc.order.mapper;
 
-import com.lzz.model.CYD000001Order;
+
+import com.imooc.order.entity.CYD000001Order;
 
 import java.util.HashMap;
 import java.util.List;

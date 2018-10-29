@@ -19,6 +19,10 @@ zuul:
       path: /myProduct/**
       serviceId: product
       sensitiveHeaders:
+    bbbbbb:
+      path:/order/**
+      serviceId: order
+      sensiticeHeaders:
   #简洁写法
 #    product: /myProduct/**
   #排除某些路由
